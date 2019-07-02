@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>Let's SHOP LOGIN</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+   <h1> Let's SHOP </h1>
+    <h3>Login to make transaction </h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome to Let's SHOP.</h3>
+    <p id="user_para"></p>
+    <p></p>
+    <button onclick="logout()">Continue Shopping</button>
+  </div>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA8w-vq17jX5KLoW4hxt5FGDJKrKSjdiqU",
+    authDomain: "ait-mini-blogger.firebaseapp.com",
+    databaseURL: "https://ait-mini-blogger.firebaseio.com",
+    projectId: "ait-mini-blogger",
+    storageBucket: "ait-mini-blogger.appspot.com",
+    messagingSenderId: "1019457164945"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  
+  <script src="index.js"></script>
+
+</body>
+</html>
